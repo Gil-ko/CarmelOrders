@@ -1,0 +1,5 @@
+C:\Users\User\OneDrive\Pictures\Screenshots\CarmelOrders\CarmelOrders.Core\obj\Debug\net8.0\CarmelOrders.Core.csproj.AssemblyReference.cache
+C:\Users\User\OneDrive\Pictures\Screenshots\CarmelOrders\CarmelOrders.Core\obj\Debug\net8.0\CarmelOrders.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\OneDrive\Pictures\Screenshots\CarmelOrders\CarmelOrders.Core\obj\Debug\net8.0\CarmelOrders.Core.AssemblyInfoInputs.cache
+C:\Users\User\OneDrive\Pictures\Screenshots\CarmelOrders\CarmelOrders.Core\obj\Debug\net8.0\CarmelOrders.Core.AssemblyInfo.cs
+C:\Users\User\OneDrive\Pictures\Screenshots\CarmelOrders\CarmelOrders.Core\obj\Debug\net8.0\CarmelOrders.Core.csproj.CoreCompileInputs.cache

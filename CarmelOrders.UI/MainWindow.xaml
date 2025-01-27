@@ -1,0 +1,61 @@
+﻿<Window x:Class="CarmelOrders.UI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="מערכת הזמנות כרמל" Height="768" Width="1024"
+        FlowDirection="RightToLeft"
+        WindowStartupLocation="CenterScreen">
+
+    <DockPanel>
+        <!-- סרגל כלים עליון -->
+        <ToolBar DockPanel.Dock="Top" Height="40">
+            <Button Content="רענון" Command="{Binding רענון_Command}" Margin="5"/>
+            <Button Content="לקוחות" Margin="5"/>
+            <Button Content="אפשרויות" Margin="5"/>
+            <TextBlock Text="{Binding CurrentTime}" 
+                       VerticalAlignment="Center" 
+                       HorizontalAlignment="Center" 
+                       Margin="20,0"/>
+            <Button Content="הזמנה חדשה" 
+                    Command="{Binding הזמנה_חדשה_Command}" 
+                    Margin="5"/>
+            <Button Content="סינון" Margin="5"/>
+        </ToolBar>
+
+        <!-- טבלת הזמנות -->
+        <DataGrid ItemsSource="{Binding הזמנות}"
+                  SelectedItem="{Binding הזמנה_נבחרת}"
+                  AutoGenerateColumns="False"
+                  IsReadOnly="True"
+                  GridLinesVisibility="All"
+                  AlternatingRowBackground="AliceBlue">
+
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="מספר הזמנה" Binding="{Binding מספר_הזמנה}"/>
+                <DataGridTextColumn Header="שם חברה" Binding="{Binding שם_חברה}"/>
+                <DataGridTextColumn Header="מוצר" Binding="{Binding מוצר}"/>
+                <DataGridTextColumn Header="כמות" Binding="{Binding כמות}"/>
+                <DataGridTextColumn Header="סוג אריזה" Binding="{Binding סוג_אריזה}"/>
+                <DataGridTextColumn Header="גוון" Binding="{Binding גוון}"/>
+                <DataGridTextColumn Header="הערות" Binding="{Binding הערות}"/>
+                <DataGridTextColumn Header="סטטוס" Binding="{Binding סטטוס}"/>
+                <DataGridTextColumn Header="דחיפות" Binding="{Binding דחיפות}"/>
+                <DataGridCheckBoxColumn Header="ת.מ" Binding="{Binding עם_תעודת_משלוח}"/>
+                <DataGridTextColumn Header="מספר ת.מ" Binding="{Binding מספר_תעודת_משלוח}"/>
+                <DataGridTextColumn Header="תאריך" Binding="{Binding תאריך_הזמנה, StringFormat={}{0:dd/MM/yyyy}}"/>
+            </DataGrid.Columns>
+
+            <DataGrid.RowStyle>
+                <Style TargetType="DataGridRow">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding קיים_במלאי}" Value="True">
+                            <Setter Property="Background" Value="Yellow"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding יש_נוסחה}" Value="False">
+                            <Setter Property="Background" Value="Red"/>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </DataGrid.RowStyle>
+        </DataGrid>
+    </DockPanel>
+</Window>

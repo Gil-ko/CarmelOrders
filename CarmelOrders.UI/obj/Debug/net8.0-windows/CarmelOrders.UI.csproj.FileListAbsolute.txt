@@ -1,0 +1,11 @@
+C:\Users\User\OneDrive\Pictures\Screenshots\CarmelOrders\CarmelOrders.UI\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\User\OneDrive\Pictures\Screenshots\CarmelOrders\CarmelOrders.UI\obj\Debug\net8.0-windows\Views\NewOrderWindow.baml
+C:\Users\User\OneDrive\Pictures\Screenshots\CarmelOrders\CarmelOrders.UI\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\User\OneDrive\Pictures\Screenshots\CarmelOrders\CarmelOrders.UI\obj\Debug\net8.0-windows\Views\NewOrderWindow.g.cs
+C:\Users\User\OneDrive\Pictures\Screenshots\CarmelOrders\CarmelOrders.UI\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\User\OneDrive\Pictures\Screenshots\CarmelOrders\CarmelOrders.UI\obj\Debug\net8.0-windows\CarmelOrders.UI_MarkupCompile.cache
+C:\Users\User\OneDrive\Pictures\Screenshots\CarmelOrders\CarmelOrders.UI\obj\Debug\net8.0-windows\CarmelOrders.UI.g.resources
+C:\Users\User\OneDrive\Pictures\Screenshots\CarmelOrders\CarmelOrders.UI\obj\Debug\net8.0-windows\CarmelOrders.UI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\OneDrive\Pictures\Screenshots\CarmelOrders\CarmelOrders.UI\obj\Debug\net8.0-windows\CarmelOrders.UI.AssemblyInfoInputs.cache
+C:\Users\User\OneDrive\Pictures\Screenshots\CarmelOrders\CarmelOrders.UI\obj\Debug\net8.0-windows\CarmelOrders.UI.AssemblyInfo.cs
+C:\Users\User\OneDrive\Pictures\Screenshots\CarmelOrders\CarmelOrders.UI\obj\Debug\net8.0-windows\CarmelOrders.UI.csproj.CoreCompileInputs.cache
