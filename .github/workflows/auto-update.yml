@@ -11,11 +11,20 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-
-      - name: Run Cursor AI updates
+        
+      - name: Set up Git
         run: |
           git config --global user.name "CursorAI"
           git config --global user.email "cursorai@github.com"
+
+      - name: Fetch latest changes
+        run: |
+          git fetch origin main
+          git reset --hard origin/main
+
+      - name: Run Cursor AI updates
+        run: |
+          touch updated_by_cursor.txt  # יצירת שינוי כדי ש-Git יזהה קובץ חדש
           git add .
-          git commit -m "Automated fixes by Cursor AI"
-          git push origin main
+          git commit -m "Automated update by Cursor AI" || echo "No changes to commit"
+          git push origin main || echo "No changes to push"
