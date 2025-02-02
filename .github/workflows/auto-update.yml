@@ -1,0 +1,21 @@
+name: Auto-Update Project
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  update-code:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Run Cursor AI updates
+        run: |
+          git config --global user.name "CursorAI"
+          git config --global user.email "cursorai@github.com"
+          git add .
+          git commit -m "Automated fixes by Cursor AI"
+          git push origin main
